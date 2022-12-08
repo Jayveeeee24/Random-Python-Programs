@@ -4,7 +4,7 @@ import sys
 import time
 
 def logo():
-    print('\t\t\t*************************************')
+    print('\t\t\t*************************************') 
     print('\t\t\t*          Typing Master            *')
     print('\t\t\t*                  Artemis 2020     *')
     print('\t\t\t*************************************')
@@ -13,7 +13,7 @@ def logo():
 
 #this is the original list of all records
 list_allScores = [line.strip() for line in open('TypingMaster - Records.txt')]
-
+#do the original haraters ake ore shaodnws like life sized with a liking to a nothherhdo you anoterhhh
 
 #this will contain all splitted records into multidimensional array [[name, time, etc...], [name, time, etc...]]
 splittedScores = [line.split() for line in list_allScores]
@@ -128,9 +128,9 @@ if len(listMistakes) > 0:
 record = name + ' ' + str(timeSum) + ' ' + str(fastest) + ' ' + str(slowest) + ' ' + str(score) + ' ' + str(10-score)
 
 #this is where saving is done
-write = open('..\Reference\TypingMaster - Records.txt', 'a')
+write = open('TypingMaster - Records.txt', 'a')
 print(record, file = write)
 write.close()
-os.system('pause >nul')
+os.system('pause')
 
 #ARTEMIS - 04/04/20
